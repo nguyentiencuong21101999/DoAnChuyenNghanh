@@ -1,0 +1,254 @@
+
+.add_page{
+    background-color: #E6E6E6;
+    margin-top: 2%;
+    height: 32px;
+    padding-left: 18%;
+    padding-top: 5px;
+    height: 32px;
+}
+.postNew{
+ 
+    // margin-top: 2%;
+    margin-left: 15%;
+    .form-dangtin{
+    
+        padding: 4%;
+        // border:1px solid #BDBDBD;
+        // -moz-box-shadow:0 0 8px #cfcfc8;
+        // -webkit-box-shadow:0 0 15px #cfcfc8;
+        // box-shadow:0 0 15px #cfcfc8;
+        .info-post{
+            color: #B45F04;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 2%;
+            margin-bottom: 3%;
+        }
+        
+        .form-dangtin-select{
+
+            .span-text{
+                    display: inline;
+                    font-weight: bold;
+            }
+            .select-Text {
+                display: inline;
+                width: 200px;
+                height: 35px;
+                padding: auto;
+                border-color: #848484;
+            }
+        }
+        .body-post{
+            margin-top: 2%;
+            .body-title{
+                .text-title{
+                    font-weight: bold;
+                }
+               
+                input{
+                    margin-top: 1%;
+                    display: inline;
+                    width: 97%;
+                    border-color: #848484;
+                }
+
+            }
+            
+             .description{
+                 margin-top: 2%;
+                 .text-description{
+                     font-weight: bold;
+                 }
+                 textarea{
+                     height: 170px;
+                    width: 97%;
+                    margin-top: -5px;
+                    border-color: #848484;
+                 }
+             }
+            
+             .address{
+                 .text-address{
+                     font-weight: bold;
+                 }
+                 input{
+                     margin-top: 1%;
+                     display: inline;
+                    width: 97%;   
+                    border-color: #848484;
+                 }
+             }
+             .prices_size{
+                  margin-top: 2%;
+                  .size{
+                    margin-left: 15px;
+                   .text-size{
+                       font-weight: bold;
+                   }
+                   select{
+                       display: inline;
+                       width: 21%;
+                       border-color: #848484;
+                       border-color: #848484;
+                   }
+   
+               }
+                .prices{
+                    margin-left: 84px;
+                    display: inline;
+                     margin-top: 2%;
+                    .text-price{
+                        padding-top: -4px;
+                        font-weight: bold;
+                    }
+                    .input-prices{
+                        margin-left: 5px;
+                        padding-top: -4px;
+                        display:none;
+                        width: 25%;
+                        border-color: #848484;
+    
+                    }
+                    select{
+                        margin-top: -2px;
+                            margin-left: 1%;
+                            position: absolute;
+                            width:20%;
+                            display: inline ;
+                            border-color: #848484;
+                        }
+                 }
+                 
+             }
+             .option-buttom{
+                 margin-top: 2%;
+               
+                 .bathroom{
+                     .text-bathroom{
+                        display: inline;
+                         font-weight: bold;
+                     }
+                     select{
+                        display: inline;
+                        width: 21%;
+                        border-color: #848484;
+                    }
+
+                 }
+                 .badroom{
+                    margin-left: 3%;
+                    .text-badroom{
+                       display: inline;
+                        font-weight: bold;
+                    }
+                    select{
+                       display: inline;
+                       width: 25%;
+                       border-color: #848484;
+                   }
+
+                }
+             }
+             .img{ 
+             
+                 margin-top: 2%;
+                .text-img{
+                    font-weight: bold;
+                }
+                .slide_img{
+                    // position: absolute;
+                    margin-left: 100px !important;
+                    margin-top: 1%;
+                    height: 70px;
+                     .displayImg{
+                         border: 1px solid #424242;
+                         height: 70px;
+                         
+                        i{
+                            font-weight: bold;
+                            margin-top: 22px;
+                            margin-left: 10px;
+                            padding-right: 10px;
+                            font-size: 20px;
+                        }
+                      
+                        img{
+                        display: inline;
+                        padding:2% !important;
+                        // position: absolute;
+                        // margin-left: 20%;
+                        height: 70px;
+                        width:70px;
+                        // margin-top: -110px;
+        
+                    }
+                   
+                }
+                }
+                .border{
+                    position: absolute;
+                    margin-top: 1%;
+                   width: 70px;
+                   height: 70px;
+                   border: 1px solid #585858 !important;
+                    input{
+                        display: none;
+                        
+                    }
+                    .icon-img{
+                        font-size: 25px;
+                        margin-left:34%;
+                        margin-top: 26%;
+                    }
+                    .icon-img:hover{
+                       
+                        opacity: 0.5;
+                    }
+               
+                   
+                }
+              
+            
+             }
+
+        }
+    }
+    
+    .info{
+        .text-info{
+            color:#B45F04 !important;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 1%;
+        }
+        .info-dangtin{
+            display: inline;
+        }
+        input{
+            border-color: #848484;
+        }
+      
+
+        // position: absolute;
+        // margin-left: 70%;
+        // margin-top:-30%;
+    }
+    .btn{
+        display: inline;
+        margin-bottom: 2%;
+        .btn_Cancle{
+            width: 10%;
+            margin-top: 2%;
+            margin-left:2%;
+        }
+        .btn_Post{
+            width: 15%;
+            margin-top: 2%;
+            margin-left: 5%;
+          
+        }
+    }
+    
+}

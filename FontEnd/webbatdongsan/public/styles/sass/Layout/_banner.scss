@@ -1,0 +1,110 @@
+.header__banner{
+    margin-top: 1%;
+    margin-left:5%;
+    margin-right:5%;
+    height: 300px;
+   
+    .carousel {
+        border:1px solid white;
+        -moz-box-shadow:0 0 8px #808451;
+        -webkit-box-shadow:0 0 15px #808451;
+        box-shadow:0 0 15px #808451;
+        float: left;
+        width:72%;
+        z-index: 100;
+        .carousel-item{
+            img{
+            
+                width: 100% !important ;
+                height: 320px;
+            }
+        }
+    }
+    .header__search{
+        padding: 1%;
+        border:1px solid white;
+        -moz-box-shadow:0 0 8px #808451;
+        -webkit-box-shadow:0 0 15px #808451;
+        box-shadow:0 0 15px #808451;
+        float:right;
+       width: 25%;
+       font-size: 13px;
+       font-weight: bold;
+      
+        .header__sell{
+            margin-left: 4%;
+            float: left;
+            width: 10%;
+            margin-left: 5px;
+            .lb-ban{
+                background-color: blue;
+                color: white;
+                border-radius: 5px;
+                height: 25px;
+                width: 40px;
+                padding-left:4px;
+                padding-top: 2px;
+            
+            }
+            input{
+                display: none;
+            }
+        }
+    
+        .header__lease{
+            position: absolute;
+            margin-left: 48px;
+            width: 82%;
+            float: right;
+            .lb-chothue{
+                background-color:white;
+                color: #848484;
+                border-radius: 5px;
+                height: 25px;
+                width: 90px;
+                padding-left:5px;
+                padding-top: 2px;
+            }
+            .lb-chothue:hover{
+                background-color:blue;
+                color: white;
+                border-radius: 5px;
+                height: 25px;
+                width: 90px;
+                padding-left:5px;
+                padding-top: 2px;
+            }
+            input{
+                display: none;
+            }
+        }
+        hr{
+            margin-top:25px;
+        }
+        .header__input{
+            margin-top: -5%;
+            margin-right: 2%;
+            margin-left: 2%;
+        }
+        .header__select{
+            margin-top: -2.5%;
+            margin-right: 2% !important;
+            margin-left: 2%;
+        }
+        .header__selected{
+            margin:2%;
+        }
+        .btn-kq{
+            margin:2%;
+            input{
+                width: 100%;
+            }
+            
+            
+            
+        }
+
+        
+    
+    }
+}

@@ -1,0 +1,75 @@
+@media only screen and (max-width: 562px) and (min-width: 320px) {
+  .header__banner .carousel {
+    border: 1px solid white;
+    box-shadow: 0 0 15px #808451;
+    width: 100%;
+    z-index: 100;
+  }
+  .header__menu__content {
+    display: none;
+  }
+  .header__banner .header__search {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .iconBar {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    color: #fff;
+  }
+  .icon-messenger {
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    position: fixed;
+  }
+  .iconBar:hover .header__menu__content {
+    display: block;
+  }
+}
+.socket__content {
+  border-radius: 10px;
+  border: 1px solid #ecf0f1;
+  padding: 5px;
+  height: 370px;
+  width: 320px;
+}
+.socket__content .username {
+  background-color: #ecf0f1;
+  color: #2d3436;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid#ecf0f1;
+}
+.socket {
+  position: fixed;
+  top: 50%;
+  right: 2%;
+  border-radius: 10px;
+  height: 370px;
+  width: 320px;
+  margin-top: 0;
+  margin-left: 0;
+}
+.admin {
+  margin-top: 10px;
+}
+.icon-messenger {
+  position: fixed;
+  margin-top: 0;
+  margin-left: 0;
+  top: 90%;
+  right: 2%;
+  color: red;
+}
+.fab .fa-facebook-messenger {
+  color: red;
+}
+.header__banner .header__search .header__lease {
+  width: 100px;
+}
+.iconFb {
+  color: red;
+}

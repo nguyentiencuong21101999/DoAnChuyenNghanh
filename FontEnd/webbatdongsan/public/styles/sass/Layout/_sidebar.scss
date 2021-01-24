@@ -1,0 +1,175 @@
+// -----------------------------------------------------------------------------
+// This file contains all sidebar styles.
+// -----------------------------------------------------------------------------
+
+/* SIDEBAR */
+.sidebar {
+    padding-top: 50px;
+    &__content {
+        /* SIDEBAR-CATEGORY */
+        .sidebar__category {
+            &__content {
+                .sidebar__category__item {
+                    margin-bottom: spacing(1.5);
+                    font-size: fontSize("fs-8");
+                    .card {
+                        border: none;
+                        overflow: hidden;
+                        &-header {
+                            background-color:blue;
+                            color: white ;//color("white");
+                            padding: 8px 10px ;//spacing(0.8) spacing(1);
+                            font-weight: fontWeight("fw-medium");
+                            border-radius: spacing(1);
+                        }
+                        &-body {
+                            padding: 0;
+                            .list-group {
+                                &-item {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    border-top: none;
+                                    border-radius: spacing(1);
+                                    padding: spacing(0.8) spacing(1);
+                                    &:hover {
+                                        background-color: color("extraExtraLightGrey");
+                                        a {
+                                            color: color("blue");
+                                        }
+                                    }
+                                    &.active {
+                                        background-color: transparent;
+                                        border-color: color("border");
+                                        a {
+                                            color:blue;  // color("blue");
+                                            font-weight: fontWeight("fw-medium");
+                                        }
+                                        svg {
+                                            background-color: color("lightBlue");
+                                            border: spacing(0.1) solid color("blue");
+                                            path {
+                                                fill: color("blue");
+                                            }
+                                        }
+                                    }
+                                    a {
+                                        color: black //color("black");
+                                    }
+                                    svg {
+                                        float: right;
+                                        width: spacing(2);
+                                        transition: all 0.3s;
+                                        border-radius: 50%;
+                                        &:hover {
+                                            cursor: pointer;
+                                            background-color: color("lightBlue");
+                                            path {
+                                                fill: color("blue");
+                                            }
+                                        }
+                                    }
+                                }
+                                .collapse,
+                                .collapsing {
+                                    .list-group {
+                                        &-item {
+                                            padding-left: spacing(1.5);
+                                            a {
+                                                &::before {
+                                                    content: "";
+                                                    display: inline-block;
+                                                    width: spacing(0.5);
+                                                    height: spacing(0.5);
+                                                    border-radius: 50%;
+                                                    margin: 0 spacing(1) spacing(0.3) 0;
+                                                    background-color: color("blue");
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        /* SIDEBAR-NETWORK */
+        .sidebar__network {
+            .card {
+                border: none;
+                overflow: hidden;
+                &-header {
+                    background-color: color("blue");
+                    color: color("white");
+                    padding: spacing(0.8) spacing(1);
+                    font-weight: fontWeight("fw-medium");
+                    border-radius: spacing(1) spacing(1) 0 0;
+                }
+                &-body {
+                    padding: 0;
+                    border: spacing(0.1) solid color("border");
+                    border-radius: 0 0 spacing(1) spacing(1);
+                    background-color: color("extraExtraLightGrey");
+                    .sidebar__network__item {
+                        padding: spacing(0.8) spacing(1);
+                        font-size: fontSize("fs-8");
+                        a {
+                            display: flex;
+                            justify-content: start;
+                            align-items: center;
+                            color: color("black");
+                            &:hover {
+                                color: color("blue");
+                            }
+                            img {
+                                width: spacing(3);
+                            }
+                            svg {
+                                width: spacing(3);
+                                path:last-child {
+                                    fill: color("white");
+                                }
+                            }
+                            span {
+                                margin-left: spacing(0.8);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        /* SIDEBAR-OPTION */
+        .sidebar__option {
+            .card {
+                border: none;
+                overflow: hidden;
+                &-header {
+                    background-color: color("blue");
+                    color: color("white");
+                    padding: spacing(0.8) spacing(1);
+                    font-weight: fontWeight("fw-medium");
+                    border-radius: spacing(1) spacing(1) 0 0;
+                }
+                &-body {
+                    padding: 0;
+                    border: spacing(0.1) solid color("border");
+                    border-radius: 0 0 spacing(1) spacing(1);
+                    background-color: color("extraExtraLightGrey");
+                    .sidebar__network__item {
+                        a {
+                            padding: spacing(.8) spacing(1);
+                            display: block;
+                            color: color("black");
+                            font-size: fontSize("fs-8");
+                            &:hover {
+                                color: color("blue");
+                            }
+                        }
+                    }  
+                }
+            }
+        }
+    }
+}

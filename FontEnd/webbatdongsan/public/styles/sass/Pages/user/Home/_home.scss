@@ -1,0 +1,162 @@
+.home{
+    margin-top: 2%;
+    margin-left:5%;
+    margin-right:5%;
+    
+    &__text{
+        margin-top: 2%;
+        color:black;
+        font-weight: bold;
+        font-size: 20px;
+        hr{
+            margin-top: 0px;
+            border:1px solid #BDBDBD;
+            -moz-box-shadow:0 0 8px #808451;
+            -webkit-box-shadow:0 0 15px #808451;
+            box-shadow:0 0 15px #808451;
+            border-bottom: none;
+        }
+     
+    }
+    &__slide{
+        //height: 400px !important;
+        // border-bottom: none;
+        border:1px solid white;
+        -moz-box-shadow:0 0 8px #808451;
+        -webkit-box-shadow:0 0 15px #808451;
+        box-shadow:0 0 15px #808451;
+    
+          .slick-dots li {
+            margin: 0 16px;
+          }
+          .slick-dots li button:before {
+            content: " ";
+            background: #D8D8D8;
+            opacity: 1;
+            height: 4px;
+            width: 40px;
+          }
+          .slick-dots li.slick-active button:before {
+            content: " ";
+            background: #0080AD;
+            opacity: 1;
+            height: 4px;
+            width: 40px;
+          }
+        .slick-slider{
+            .slick-dots{
+                display: none !important;
+            }
+        }
+        .home__product{
+            margin-top: 3%;
+            margin: 15px;
+            width: 87% !important;
+            //anh slide
+            .img-newbook_slide{
+                margin-left:0px;
+                width: 108.5% !important;
+            }
+           //slide tin tuc
+            a{
+                text-decoration: none;
+                .img-newbook{
+                    width: 100% !important;
+                    height:200px;
+                   //margin-left: 5%; 
+                    margin-top: 2px;  
+                    
+                }
+                .kind{
+                    position: absolute;
+                    margin-top: -190px;
+                    margin-left: 145px;
+                    padding-top: 7px;
+                    background-color: red;
+                    height: 30px;
+                    width: 30px;
+                    text-align: center;
+                    border-radius: 50%;
+                    font-weight: bold;
+                    font-size: 11px;
+                    color:white; 
+                    
+                }
+                .home__info{
+                    width:100% !important;
+                
+                    //margin-left: 5%;
+                    .title{
+                        font-size: 14px;
+                        font-weight: bold;
+                        text-decoration: none;
+                        padding:1%;
+                        height: 65px;
+                        
+                    }
+                    .price_sum{
+                        width: 100%;
+                        .price{
+                            
+                            padding:5px;
+                            margin-top: 1%;
+                            font-size: 13.5px;
+                            background-color:#FF4000;
+                            border-radius: 5px;
+                            color:white;
+                        }
+                        .size{
+                            color:#1C1C1C;
+                           padding-left:10px;
+                        }
+                    }
+                    
+                    .address{
+                        color:#1C1C1C;
+                        margin-top: 2%;
+                        font-size: 12px;
+                    }
+                }
+            }
+            
+        }
+        // .home__product:hover  {
+        //     a{
+        //         .home__info{
+        //             .cart{
+        //                 width: 60%;
+        //                 text-align: center;
+        //                 background-color: #DBA901;
+        //                 margin-left: 5px;
+        //                 display: block;
+        //             }
+        //         }
+        //     }
+
+        // }
+      
+        
+
+       
+    }
+    &__slide:hover{
+        .slick-prev {
+            padding-top: 1px;
+            background-color:green;
+            border-radius: 50px;
+           margin-left:2%;
+           z-index: 1;
+          
+          }
+
+          .slick-next {
+            padding-top: 1px;
+            background-color:green;
+            border-radius: 50px;
+           margin-right:2%;
+           z-index: 1;
+          
+          }
+    }
+ 
+}

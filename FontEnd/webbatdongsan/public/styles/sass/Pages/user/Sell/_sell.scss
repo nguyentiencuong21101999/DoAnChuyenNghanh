@@ -1,0 +1,142 @@
+.estate {
+    width: 100%;
+    margin-left: 10%;
+    margin-left: 10%;
+}
+.full_sell {
+    margin-left: 2%;
+    .filter {
+        border: 1px solid #dee2e6;
+        background-color: #f2f2f2;
+        margin-top: 44%;
+        margin-left: 5%;
+        // padding: 2%;
+        .filter_title {
+            .text_title {
+                font-weight: bold;
+                padding-left: 20px;
+                padding-top: 10px;
+                i {
+                    float: right;
+                    margin-right: 20px;
+                }
+            }
+            hr {
+                width: 85%;
+            }
+            .checkbox {
+                .checkbox_title {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+    .sell {
+        margin-top: 2%;
+        margin-right: 5%;
+        padding-top: 2%;
+        // border: 1px solid white;
+        // -moz-box-shadow: 0 0 8px #808451;
+        // -webkit-box-shadow: 0 0 15px #808451;
+        // box-shadow: 0 0 15px #808451;
+        // .input_search {
+        //     display:none
+        // }
+        // button{
+        //     display:none
+        // }
+        .message {
+            margin-bottom: 1%;
+            font-weight: bold;
+            .number_mess {
+                color: #f74a27;
+            }
+            .select{
+                width: 20%;
+            }
+            
+        }
+        .home__product {
+            margin: 2px;
+            width: 100% !important;
+
+            .border {
+                padding: 2%;
+                background-color: #f2f2f2;
+                a {
+                    text-decoration: none;
+                    .img-newbook {
+                        position: absolute;
+                        border-radius: 5px;
+                        width: 200px !important;
+                        height: 150px;
+                        //margin-left: 5%;
+                        margin-top: 2px;
+                        display: inline;
+                    }
+
+                    .home__info {
+                        color: #2e2e2e;
+                        margin-left: 24%;
+                        .title {
+                            color: #ff6600;
+                            font-weight: bold;
+                            font-size: 16px;
+                            text-decoration: none;
+                            padding: 1%;
+                        }
+                        .info {
+                            .name_user {
+                                i {
+                                    font-size: 14px;
+                                }
+                                padding-left: 6px;
+                            }
+                            .phone {
+                                i {
+                                    font-size: 14px;
+                                }
+                                margin-left: 10px;
+                            }
+                        }
+                        .prices {
+                            color: #2e2e2e;
+                            margin-top: 1%;
+                            padding-left: 6px;
+                            .price {
+                                padding-top: 2%;
+                                color: red;
+                            }
+                            .size {
+                                padding-left: 30px;
+                            }
+                        }
+
+                        .address {
+                            i {
+                                font-size: 14px;
+                            }
+                            margin-top: 2%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .container {
+            margin-left: 5%;
+            margin-left: 5%;
+            margin-bottom: 2%;
+        }
+
+        .pagination {
+            input:focus {
+                background-color: green;
+            }
+        }
+
+        .pagination input:hover:not(.active) {
+            background-color: #ddd;
+        }
+    }
+}

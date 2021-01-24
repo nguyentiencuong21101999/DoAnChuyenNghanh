@@ -1,0 +1,225 @@
+.icon-messenger{
+  z-index: 999;
+  position: fixed;
+  margin-top: 43%;
+  margin-left: 96%;
+  .icon{
+    background-color:white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: 1px solid white;
+    //chua click  classnaem = "icon"
+    transform: scale(1);
+    transition: 0.4s cubic-bezier(.58,.25,.47,.84);
+    transform-origin: right bottom;
+    //classname = "active"
+    &.active{
+      transform: scale(0);
+      transform-origin: right bottom;
+      transition: 0.4s cubic-bezier(.58,.25,.47,.84);
+  
+    }
+    i{
+      padding-left: 20px;
+      padding: 4px;
+      font-size: 45px;
+      color: blue;
+    }
+  }
+ 
+}
+.socket{
+  position: fixed;
+  margin-top: 24%;
+  margin-left: 78%;
+  z-index: 999;
+  background-color:#ffffff ;
+  transform: scale(0);
+  transition: 0.4s cubic-bezier(.58,.25,.47,.84);
+  transform-origin: right bottom;
+  &.active{
+    transform: scale(1);
+    transform-origin: right bottom;
+    transition: 0.4s cubic-bezier(.58,.25,.47,.84);
+
+  }
+// float: right;
+    &__content{
+      transition: width 2s, height 4s;
+      width: 330px;
+      border: 1px solid black;
+      height: 350px;
+      
+      .username{
+        .icon-close{
+          padding: 2px;
+          float:right;
+          font-size: 20px;
+        }
+        .icon-close:hover{
+          color: red;
+        }
+        i{
+          color:#40FF00;
+          font-size: 12px;
+          margin-right: 4px;
+        }
+        height: 40px;
+        color: white;
+        padding: 3px;
+        background-color: royalblue;
+        border: 1px solid black;
+        
+      }
+      .message{
+        margin-top: 2%;
+        background-color: #ffffff;
+        overflow-y: scroll;
+        height: 268px;
+        padding: 5px;
+        .client{
+          padding-left: 40%;
+          // .name{
+          //   float:right;
+          // }
+          .content{
+            background-color: blue;
+            color: white;
+            float: right;
+            border: solid 1px;
+            padding: 10px;
+            border-radius: 20px;
+          }
+        }
+        .admin{
+          .content{
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border-radius: 20px;
+          }
+        }
+      }
+      .txt-mess{
+        input{
+        width: 100%;
+        margin-left: 2px;
+
+        }
+       
+      }
+      .btn-submit{
+        input{
+          margin-left: -20px;
+          width: 115%;
+        }
+       margin-right: 10px;
+      }
+    }
+  
+}
+
+@media  only screen and(max-width:46.1875em){
+
+}
+@media  only screen and(min-width:46.1875em )and (max-width : 63.9375em){
+  .icon-messenger{
+    z-index: 999;
+    position: fixed;
+    margin-top: 80%;
+    margin-left: 60%;
+    .icon{
+      background-color:white;
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      border: 1px solid white;
+      //chua click  classnaem = "icon"
+      transform: scale(1);
+      transition: 0.4s cubic-bezier(.58,.25,.47,.84);
+      transform-origin: right bottom;
+      //classname = "active"
+      &.active{
+        transform: scale(0);
+        transform-origin: right bottom;
+        transition: 0.4s cubic-bezier(.58,.25,.47,.84);
+    
+      }
+      i{
+        padding-left: 20px;
+        padding: 4px;
+        font-size: 45px;
+        color: blue;
+      }
+    }
+   
+  }
+  .socket{
+    position: fixed;
+    margin-top: 24%;
+    margin-left: 30%;
+    z-index: 999;
+    background-color:#ffffff ;
+    transform: scale(0);
+    transition: 0.4s cubic-bezier(.58,.25,.47,.84);
+    transform-origin: right bottom;
+    &.active{
+      transform: scale(1);
+      transform-origin: right bottom;
+      transition: 0.4s cubic-bezier(.58,.25,.47,.84);
+  
+    }
+  // float: right;
+      &__content{
+        transition: width 2s, height 4s;
+        width: 330px;
+        border: 1px solid black;
+        height: 350px;
+        
+        .username{
+          .icon-close{
+            padding: 2px;
+            float:right;
+            font-size: 20px;
+          }
+          .icon-close:hover{
+            color: red;
+          }
+          i{
+            color:#40FF00;
+            font-size: 12px;
+            margin-right: 4px;
+          }
+          height: 40px;
+          color: white;
+          padding: 3px;
+          background-color: royalblue;
+          border: 1px solid black;
+        }
+        .message{
+          background-color: #ffffff;
+          overflow-y: scroll;
+          height: 268px;
+          padding: 5px;
+        }
+        .txt-mess{
+          input{
+          width: 100%;
+          margin-left: 2px;
+  
+          }
+         
+        }
+        .btn-submit{
+          input{
+            margin-left: -20px;
+            width: 115%;
+          }
+         margin-right: 10px;
+        }
+      }
+    
+  }
+}
+

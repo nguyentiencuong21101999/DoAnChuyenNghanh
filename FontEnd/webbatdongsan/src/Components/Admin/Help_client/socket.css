@@ -1,0 +1,141 @@
+.help-client .row .user_online .dropdown .btn-success {
+  border: none;
+}
+.help-client .row .user_online .dropdown .dropdown-menu {
+  height: 200px;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+}
+.help-client .row .user_online .dropdown .dropdown-menu .row input {
+  border: none;
+  color: #000000;
+  float: left;
+}
+.rowUser {
+  width: 176px;
+  height: 40px;
+  border: 1px solid#f1f2f6;
+  border-radius: 15px;
+  padding: 6px 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+.textNameUser {
+  border: none;
+  background-color: #ffff;
+}
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #2ed573;
+  position: absolute;
+  top: 16px;
+  right: 21px;
+}
+.name {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.help-client .row .user_online .dropdown i {
+  color: #3742fa;
+  font-size: 30px;
+}
+
+.notification {
+  width: 5px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: red;
+}
+
+.btn_Logout {
+  position: absolute;
+  right: -55%;
+  top: 0px;
+  cursor: pointer;
+}
+.iconLogout {
+  font-size: 30px;
+}
+
+.messenger .form {
+  border: 1px solid #ced6e0;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fff;
+}
+.messenger .form .username {
+  border-radius: 10px;
+  border: 1px solid#ecf0f1;
+  background-color: #f1efef;
+}
+
+.messenger .form .username i {
+  color: #2ecc71;
+  margin-right: 10px;
+}
+.messenger .form .send-message {
+  position: absolute;
+  bottom: 10px;
+}
+.txt_mess {
+  width: 210px;
+}
+.messenger .form .send-message .row .btn-submit input {
+  margin-left: 60px;
+}
+/* .messenger {
+  position: fixed;
+  top: 50%;
+  right: 2%;
+} */
+
+.home-admin__manager .manager__account {
+  font-weight: bold;
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+.iconManager {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.home-admin__manager .manager__news {
+  font-weight: bold;
+  color: #2d3436;
+}
+.home-admin__manager .manager__news:hover {
+  color: #e74c3c;
+}
+.dropdownManager {
+  background-color: #ecf0f1;
+  width: 200px;
+  height: 86px;
+  border-radius: 10px;
+  margin-left: 50px;
+}
+.home-admin__manager .manager__news .manager__news__false,
+.home-admin__manager .manager__news .manager__news__true {
+  margin-left: 10px;
+  width: 100%;
+  padding: 10px;
+  color: #2d3436;
+}
+.home-admin__manager .manager__news .manager__news__false,
+.home-admin__manager .manager__news .manager__news__true:hover {
+  color: #2980b9;
+}
+.dropdownManager {
+  display: none;
+}
+
+.manager__news:hover .dropdownManager {
+  display: block;
+}
+.emptyNews {
+  width: 100%;
+  height: 500px;
+}

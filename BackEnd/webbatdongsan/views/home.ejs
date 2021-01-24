@@ -1,0 +1,33 @@
+<section id="news">
+    <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true }'>
+    <%home.forEach(function(homes){%>
+        <%homes.Con.forEach(function(detail){%>
+            <%if(detail.active ==true){ %>
+            <%if(detail.title =='Bất Động Sản Nổi Bật'){ %>
+      <div class="carousel-cell">
+        <a style="text-decoration: none;" href="/newsdetail/<%-detail._id%>">
+        <img style="width: 230px;"  class="w3-image" src="../upload/<%-detail.image%>">
+        <div class="card-body">
+            <h5 style="color: blue; font-weight: bold; height: 54px;" class="card-title"><%-detail.decription%></h5>
+        </a>
+            <%if(detail.unit =='Thỏa Thuận'){ %>
+            <p style="font-size: 14px; width: auto; padding-right:14px;" id="description" class="card-text">  <%-detail.unit%></p>
+            <!-- <p style="width:60%; float:left;padding-left: 10px; padding-top: 5px;">	<%-detail.size%>m2</p> -->
+            <%}else{%>
+                <p id="description" class="card-text"><%-detail.price%> <%-detail.unit%></p>
+                <p style="width:60%; float:left;padding-left: 10px; padding-top: 5px;">	<%-detail.size%>m2</p>
+                <%}%>
+            <div style="clear: both;"></div>
+            <p style="margin-top: 1px;height: 50px;padding-left:-100px; text-align: left;" class="card-text"> <%-detail.adress%> </p>
+            <select style="display: none;"  name="txtId">
+                <option value="<%-detail._id%>"><%-detail._id%></option>
+            </select>
+            <!-- <a style="margin-bottom: -10px;" class="btn-primary" href="./newsdetail/<%-detail._id%>">See Details </a>	chuyển sang chang với id của tin đó rồi get :id -->
+        </div>
+      </div>
+      <%}%>
+      <%}%>
+      <%})%>	
+      <%})%>
+    </div>
+</section>

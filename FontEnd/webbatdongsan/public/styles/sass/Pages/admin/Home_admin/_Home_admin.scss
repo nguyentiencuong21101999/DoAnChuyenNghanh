@@ -1,0 +1,87 @@
+.home-admin{
+
+    margin-left: 5%;
+    margin-right: 5%;
+    &__header{
+        margin-top: 1%; 
+        marquee{
+            font-size: 16px;
+            margin-right: px;
+            color:red
+        }
+        .name{
+            margin-left: 50%;
+            font-size: 20px !important;
+            .logout{
+                position: absolute;
+                padding-left: 20px;
+                display: none;
+                font-size: 16px;
+            
+            }
+        }
+        .name:hover{
+            .logout{display: block;}
+            .logout:hover{
+                color: red;
+            }
+        }
+    }
+    &__manager{
+        margin-top: 2%;
+            .manager__account{
+                // display: none;
+                cursor: pointer;
+                margin-left: 50px;
+                color: red;
+            }
+            .manager__account:hover{
+                color:red;
+            }
+            .manager__news{
+                cursor: pointer;
+                padding-top: 1%;
+                // display: none;
+                margin-left: 50px ;
+                .manager__news__false{
+                    margin-top: -10px;
+                    display: none;
+                    margin-left: 85px ;
+                }
+                .manager__news__true{
+                    padding-top: 1%;
+                    display: none;
+                    margin-left: 85px ;
+                }
+            }
+            .manager__news:hover{
+                color: red;
+                .manager__news__false{
+                    display: block;
+                    color: black;
+                }
+                .manager__news__false:hover{
+                    color:blue;
+                }
+                .manager__news__true{
+                    display: block;
+                    color: black;
+                }
+                .manager__news__true:hover{
+                    color:blue;
+                }
+            }
+       
+        .manager:hover{
+            .manager__account{
+                display: block;
+              
+            }
+            .manager__news{
+                display: block;
+            }
+        }
+        
+
+    }
+}

@@ -1,0 +1,142 @@
+.icon-messenger{
+    z-index: -1;
+    position: fixed;
+    margin-top: 43%;
+    margin-left: 96%;
+    .icons{
+      background-color:white;
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      border: 1px solid white;
+      //chua click  classnaem = "icon"
+      transform: scale(1);
+      transition: 0.4s cubic-bezier(.58,.25,.47,.84);
+      transform-origin: right bottom;
+      //classname = "active"
+      &.active{
+        transform: scale(0);
+        transform-origin: right bottom;
+        transition: 0.4s cubic-bezier(.58,.25,.47,.84);
+    
+      }
+      i{
+        padding-left: 20px;
+        padding: 4px;
+        font-size: 45px;
+        color: blue;
+      }
+    }
+   
+  }
+.help-client{
+    z-index: 99;
+    position: absolute;
+    margin-left: 75%;
+    margin-top: 1%;
+    // background-color: red;
+    .row{
+        .user_online{
+            .dropdown{
+                i{
+                    font-size: 25px;
+                    color: red;
+                    input{
+                        display:none;
+                        border-radius: 5px;
+                    }
+                }
+                .btn-success{
+                    border-radius: 50%;
+                    background-color: white;
+                }
+                .dropdown-toggle::after{
+                    display: none;
+                }
+                .dropdown-menu{
+                    padding: 10px;
+                    background-color: greenyellow;
+                    height: auto;
+                    width: 200px;
+                    .row{
+                        margin-left: 10%;
+                        input{
+                          
+                            color: red;
+                        }
+                    }
+                }
+            }
+        }
+     
+    }
+   
+}
+.messenger{
+    position: fixed;
+    margin-top: 23.5%;
+    margin-left: 78%;
+    z-index: 999;
+    transform: scale(0);
+    transition: 0.4s cubic-bezier(.58,.25,.47,.84);
+    transform-origin: right bottom;
+    &.active{
+      transform: scale(1);
+      transform-origin: right bottom;
+      transition: 0.4s cubic-bezier(.58,.25,.47,.84);
+    }
+    .form{
+        width: 330px;
+        height: 352px;
+        border: solid 1px black;
+        
+        .username{
+            background-color: royalblue;
+            padding: 8px;
+            height: 40px;
+            border  : solid 1px black ;
+            .icon-close{
+                padding: 2px;
+               float:right;
+                font-size: 20px;
+              }
+              .icon-close:hover{
+                  color: red;
+              }
+            i{
+                color: chartreuse;
+                font-size: 12px;
+                
+            }
+        }
+        .show-message{
+            padding: 5px;
+            background-color: #ffffff;
+            height: 270px;
+            overflow-y: scroll;
+            .send{
+               width: 110%;
+            }
+            
+        }
+        .send-message{
+            
+            .row{
+                .txt_mess{
+                    input{
+                        margin-left: 1px;
+                    }
+                }
+                .btn-submit{
+                    input{
+                      margin-left: -20px;
+                    }
+                }
+            }
+          
+        }
+        
+    }
+}
+    
+    

@@ -1,0 +1,29 @@
+
+
+//layout 
+@import './Layout/sidebar';
+@import './Layout/header';
+@import './Layout/banner';
+@import './Layout/footer';
+
+//Home
+@import './Pages/user/Home/home';
+
+//Login
+@import './Pages/user/Login/login';
+//DetailProduct
+@import './Pages/user/DetailProduct/detailProduct';
+//sell
+@import './Pages/user/Sell/sell';
+//my account
+@import './Pages/user/Myaccount/myAccount';
+//post new
+@import './Pages/user/Postnews/postNews';
+//my News
+@import './Pages/user/Mynews/myNews';
+@import './Pages/user/Edit/edit';
+ //Admin
+ @import './Pages/admin/Home_admin/Home_admin';
+ @import './Pages/admin/Help_Client/Help_client';
+ //socketIO
+ @import './Pages/SocketIO//SocketIO';
