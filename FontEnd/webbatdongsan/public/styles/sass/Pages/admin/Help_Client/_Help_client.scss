@@ -109,16 +109,46 @@
                 
             }
         }
-        .show-message{
-            padding: 5px;
-            background-color: #ffffff;
-            height: 270px;
-            overflow-y: scroll;
-            .send{
-               width: 110%;
-            }
+        // .show-message{
+        //     padding: 5px;
+        //     background-color: #ffffff;
+        //     height: 270px;
+        //     overflow-y: scroll;
+        //     .send{
+        //        width: 110%;
+        //     }
             
-        }
+            
+        // }
+        .show-message{
+            margin-top: 2%;
+            background-color: #ffffff;
+            overflow-y: scroll;
+            height: 268px;
+            padding: 5px;
+            .client{
+              padding-left: 40%;
+              // .name{
+              //   float:right;
+              // }
+              .content{
+                background-color: blue;
+                color: white;
+                float: right;
+                border: solid 1px;
+                padding: 10px;
+                border-radius: 20px;
+              }
+            }
+            .admin{
+              .content{
+                background-color: blue;
+                color: white;
+                padding: 10px;
+                border-radius: 20px;
+              }
+            }
+          }
         .send-message{
             
             .row{

@@ -209,21 +209,18 @@ class Postnews extends Component {
       this.state.linkImage]
       callApi('/postNews', 'post', dataPost)
         .then(
-       
           (res) => {
+            this.setState({
+              checkRedirect: '/myNews'
+            })
             var getId = {
               id: res.data._id
             }
             dataPost.push(getId);
-            callApi('/sendMail', 'post', dataPost).then(
-
-            )
+            callApi('/sendMail', 'post', dataPost).then()
           }
         )
-      this.setState({
-        checkRedirect: '/myNews'
-      });
-
+      
     }
 
   }

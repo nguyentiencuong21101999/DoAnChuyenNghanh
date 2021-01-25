@@ -28,7 +28,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "https://batdongsans.herokuapp.com",
+  "proxy": "http://localhost:4000/",
   "eslintConfig": {
     "extends": "react-app"
   },

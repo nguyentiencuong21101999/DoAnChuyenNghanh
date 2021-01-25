@@ -165,7 +165,7 @@ class Header extends Component {
                                         </Col>
                                         <Col xs={2} sm={2} md={2} lg={2}>
                                             <div className='menu_text'>
-                                                <NavLink to="/Contact">NỘI THẤT</NavLink>
+                                                <NavLink to="/furniture">NỘI THẤT</NavLink>
                                             </div>
                                         </Col>
                                         <Col xs={3} sm={3} md={3} lg={3}>
@@ -259,7 +259,7 @@ class Header extends Component {
                                         </Col>
                                         <Col xs={2} sm={2} md={2} lg={2}>
                                             <div className='menu_text'>
-                                                <NavLink to="/socket">NỘI THẤT</NavLink>
+                                                <NavLink to="/furniture">NỘI THẤT</NavLink>
                                             </div>
                                         </Col>
                                         <Col xs={3} sm={3} md={3} lg={3}>

@@ -33,16 +33,31 @@ module.exports.delete = (req, res) => {
 
 module.exports.activeGmail = (req, res) => {
     var id = req.params.id;
-    Detail.findByIdAndUpdate(id, {
-        active: true
+    Detail.findById(id)
+    .then(results =>{
+        if(results.active === true){
+            res.send({
+            status: "success",
+            Time: new Date(),
+            message:"Tin Đã Được Duyệt"})
+        }else{
+            Detail.findByIdAndUpdate(id, {
+                active: true
+            })
+                .then(
+                    res.send({
+                        status: "success",
+                        Time: new Date(),
+                        message: " Duyệt Tin Thành Công"
+                    }))
+                .catch((err) => {
+                    console.log(err);
+                })
+        }
+       
     })
-        .then(
-            res.json({
-                status: "success",
-                Time: new Date(),
-                message: " Duyệt Tin Thành Công"
-            }))
-        .catch((err) => {
-            console.log(err);
-        })
+    .catch(err =>{
+        res.json(err)
+    })
+   
 }

@@ -2288,14 +2288,31 @@
 }
 
 .messenger .form .show-message {
-  padding: 5px;
+  margin-top: 2%;
   background-color: #ffffff;
-  height: 270px;
   overflow-y: scroll;
+  height: 268px;
+  padding: 5px;
 }
 
-.messenger .form .show-message .send {
-  width: 110%;
+.messenger .form .show-message .client {
+  padding-left: 40%;
+}
+
+.messenger .form .show-message .client .content {
+  background-color: blue;
+  color: white;
+  float: right;
+  border: solid 1px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.messenger .form .show-message .admin .content {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
 }
 
 .messenger .form .send-message .row .txt_mess input {

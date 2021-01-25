@@ -27,6 +27,7 @@ import Home_admin from './Components/Admin/Home/Home_admin';
 import helpClient from './Components/Admin/HelpClient/helpClient'
 //socketIO
 import socket from  './Components/SocKet/socket'
+import Blog from './Components/User/Blog/Blog';
 
 
 
@@ -82,7 +83,7 @@ class App extends Component {
    
 
                          {/* socket */}
-                         <Route exact path="/socket" component={socket} />
+                         <Route exact path="/furniture" component={Blog} />
                     </Switch>
                 
                     <Footer />

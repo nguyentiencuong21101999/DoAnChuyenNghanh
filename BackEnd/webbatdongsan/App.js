@@ -17,7 +17,8 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json())
 
-//nodeMailer
+
+//redis
 
 //connect Mongoose
 mongoose.connect(process.env.urlLocalhost, { useNewUrlParser: true, useUnifiedTopology: true }, function (err) {
@@ -73,29 +74,21 @@ app.use('/newsManager', newsManagerRouter)
 
 const arr_mess = [];
 const user = [];
-const rooms = [];
 io.on("connection", async (socket) => {
 
     //console.log("co nguoi ket noi " + socket.id);
     await socket.on('tao-room', (data) => {
             socket.join(data.username);  // push user in room
-            // socket.phong = data.username;
             if (user.indexOf(data.username) == -1) {
                 user.push(data.username)
             }
             io.sockets.emit('user_online', user)
-            // console.log(socket.adapter.rooms);
     })
 
     socket.on('client', (data) => {
-        // console.log(data);
-        // console.log(data);
-      
         if (data.message.txt_mess !== '') {
             arr_mess.push(data.message)
         }
-        // console.log(data);
-        // console.log(arr_mess);
         const arr = []
         arr_mess.map((value) =>{
            if(data.to_client == value.rooms){
@@ -107,7 +100,6 @@ io.on("connection", async (socket) => {
     })
 
     socket.on('leave_rooms',(data) =>{
-       
         user.splice(user.indexOf(data), 1);
         socket.leave(data);
         io.sockets.emit('user_online', user)
@@ -117,20 +109,8 @@ io.on("connection", async (socket) => {
 
     socket.on("disconnect", () => {
         console.log(socket.id + " ngat ket noi");
-        console.log(socket.adapter.rooms);
     })
 
-})
-
-
-app.post("/xuly", (req, res) => {
-    console.log(req.body);
-    const { id, username } = req.body;
-    // req.app.io.on("connection",(socket) =>{
-    //     console.log("co nguoi ket noi " + socket.id);
-    // })
-    // console.log(req.body);
-    // // req.app.io("N0DyhjOAEWNJsiPUAAAH").emit('test',"a")
 })
 
 

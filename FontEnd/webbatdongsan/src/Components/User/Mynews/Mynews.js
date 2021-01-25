@@ -47,61 +47,7 @@ class Mynews extends Component {
         });
     }
 
-    myNews = () => {
-        if (this.state.data !== null) {
-            console.log("this.state.data:", this.state.data);
-            this.state.data.map((value, key) => {
-                if (value.id_post === Cookies.get("id")) {
-                    if (value.active === true) {
-                        return (
-                            <tr>
-                                <td></td>
-                                <td>{value.kind}</td>
-                                <td>{value.title}</td>
-                                <td>{value.name_user}</td>
-                                <td>{value.phone}</td>
-                                <td> Đã Duyệt</td>
-                                <td>
-                                    <NavLink to={'/myNews/edit/' + value._id}>
-                                        <i class="far fa-edit"></i>
-                                    </NavLink>
-                                    &ensp;
-                                        <i onClick={(e) => { this.deleteNews(e, value._id); }} class="fas fa-trash"></i>
-                                </td>
-                            </tr>
-                        )
-                    } else {
-                        return (
-                            <tr>
-                                <td></td>
-                                <td>{value.kind}</td>
-                                <td>{value.title}</td>
-                                <td>{value.name_user}</td>
-                                <td>{value.phone}</td>
-                                <td> Chưa Duyệt</td>
-                                <td>
-                                    <NavLink to={'/myNews/edit/' + value._id}>
-                                        <i class="far fa-edit"></i>
-                                    </NavLink>
-                                    &ensp;
-                                     <i onClick={(e) => { this.deleteNews(e, value._id); }} class="fas fa-trash"></i>
-                                </td>
-                            </tr>
-                        )
-                    }
-
-                }
-                else {
-                    return (
-                        <div className="ViewEmpty">
-
-                        </div>
-                    )
-                }
-            })
-        }
-
-    }
+  
     render() {
         if (!Cookies.get('id') && !Cookies.get('username')) {
             return <Redirect to='/login' />
@@ -113,6 +59,54 @@ class Mynews extends Component {
                     loadData: null
                 });
             })
+        }
+
+        const myNews = () => {
+            if (this.state.data !== null) {
+                return this.state.data.map((value, key) => {
+                    if (value.id_post === Cookies.get("id")) {
+                        console.log(value);
+                        if (value.active === true) {     
+                            return (
+                                <tr>
+                                    <td></td>
+                                    <td>{value.kind}</td>
+                                    <td>{value.title}</td>
+                                    <td>{value.name_user}</td>
+                                    <td>{value.phone}</td>
+                                    <td> Đã Duyệt</td>
+                                    <td>
+                                        <NavLink to={'/myNews/edit/' + value._id}>
+                                            <i class="far fa-edit"></i>
+                                        </NavLink>
+                                        &ensp;
+                                            <i onClick={(e) => { this.deleteNews(e, value._id); }} class="fas fa-trash"></i>
+                                    </td>
+                                </tr>
+                            )
+                        } else {
+                            return (   
+                                <tr>
+                                    <td></td>
+                                    <td>{value.kind}</td>
+                                    <td>{value.title}</td>
+                                    <td>{value.name_user}</td>
+                                    <td>{value.phone}</td>
+                                    <td> Chưa Duyệt</td>
+                                    <td>
+                                        <NavLink to={'/myNews/edit/' + value._id}>
+                                            <i class="far fa-edit"></i>
+                                        </NavLink>
+                                        &ensp;
+                                         <i onClick={(e) => { this.deleteNews(e, value._id); }} class="fas fa-trash"></i>
+                                    </td>
+                                </tr>
+                            )
+                        }
+                    }
+                })
+            }
+    
         }
         return (
             <div>
@@ -131,7 +125,7 @@ class Mynews extends Component {
                             </tr>
                         </thead>
                         <tbody>
-                            {this.myNews()}
+                            {myNews()}
                         </tbody>
                     </Table>
                 </div>

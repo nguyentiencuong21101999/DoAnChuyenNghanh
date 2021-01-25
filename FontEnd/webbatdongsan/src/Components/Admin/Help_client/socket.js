@@ -99,12 +99,15 @@ class sockets extends Component {
          const user_online = this.state.user_online;
          if (user_online) {
             return user_online.map(value => {
-               return (
-                  <div className="rowUser" onClick={(event) => { this.getUser(event) }}>
-                     <input className="textNameUser" type='button' id='usera-selected' name='user_selected' value={value} /> <br></br>
-                     <div className="circle"></div>
-                  </div>
-               )
+               if (value !== Cookies.get("username")) {
+                  return (
+                     <div className="rowUser" onClick={(event) => { this.getUser(event) }}>
+                        <input className="textNameUser" type='button' id='usera-selected' name='user_selected' value={value} /> <br></br>
+                        <div className="circle"></div>
+                     </div>
+                  )
+               }
+
             })
          }
 
@@ -114,18 +117,15 @@ class sockets extends Component {
          if (data) {
             return this.state.data.map(value => {
                return (
-                  <div>
-                     <span>{value.username} : </span>
-                     <span>{value.txt_mess}  </span>
+                  <div className={value.username === Cookies.get("username") ? "client" : "admin"}>
+                     <span className="content">{value.txt_mess} </span>
+                     <br></br>     <br></br>
                   </div>
                )
             })
          }
       }
       const mess = () => {
-         // const isClose = this.state.isClose;
-         // const isActive = this.state.isActive;
-         // if (isActive && isClose) {
          return (
             <Col xs={8} sm={8} md={8} lg={8}>
                <div className="form">
